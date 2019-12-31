@@ -2,7 +2,7 @@ NUMBER := $(or ${NUM},${NUM},1)
 
 .PHONY: test
 test:
-	@exec go run .
+	@exec go test .
 
 .PHONY: run-docker
 run-docker:
