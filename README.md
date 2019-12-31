@@ -2,13 +2,14 @@ Arabic to roman numeral
 --------
 Roman numerals converter written in Golang
 
-##Usage
+## Usage
+
 ### from code
 ```bash
 go run . ${number}
 ```
-###docker 
-####build image
+### docker 
+#### build image
 ```bash
 make build-docker
 ```
