@@ -5,11 +5,11 @@ NUMBER=$1
 case "${NUMBER}" in
     "help")
         shift
-        exec make help
+        exec ./ar2rom
         ;;
     *)
         shift
         export NUM=${NUMBER}
-        exec make run
+        exec ./ar2rom ${NUMBER}
         ;;
 esac

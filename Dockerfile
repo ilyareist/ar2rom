@@ -12,11 +12,11 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o a2r .
 
 FROM alpine:latest
 
-RUN apk add --update bash
+RUN apk add --update bash make
 WORKDIR /user/service
 
 # Copy the Pre-built binary file from the previous stage
-COPY --from=builder /app/ .
+COPY --from=builder /app/ar2rom /app/docker-entrypoint.sh /user/service/
 
 ENTRYPOINT ["/user/service/docker-entrypoint.sh"]
 CMD ["help"]

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"Roman-numerals/roman"
 	"fmt"
 	"os"
 	"strconv"
@@ -18,7 +17,7 @@ func main() {
 		help()
 	} else {
 
-		var res = roman.Number{Num:i}
+		var res = Number{Num:i}
 		fmt.Println(res.ToRoman())
 	}
 
