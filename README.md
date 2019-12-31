@@ -1,9 +1,18 @@
-# Arabic to roman
+Arabic to roman numeral
+--------
 Roman numerals converter written in Golang
 
 ##Usage
-###go
-go run . ${arg}
+### from code
+```bash
+go run . ${number}
+```
 ###docker 
-make  build-docker
+####build image
+```bash
+make build-docker
+```
+#### run it
+```bash
 docker run --rm ar2rom:1.0 ${number}
+```
