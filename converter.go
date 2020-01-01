@@ -31,6 +31,7 @@ func getSubRoman(times int, indentation int) string {
 
 	number := times * indentation
 	pos := 0
+	//iterating through Roman letters to find equal to indent
 	for i := 0; i < len(romanNumbers); i++ {
 		if indentation == romanNumbers[i].value {
 			pos = i
@@ -90,13 +91,14 @@ func (n *Number) ToRoman() string {
 	num := n.Num
 	indenter := 1
 
+	//finding a maximum indenter
 	for (num / (indenter * 10)) != 0 {
 		indenter *= 10
 	}
 
 	for num > 0 {
 		times := num / indenter
-
+		//finding sub letters for the current indenter
 		str := getSubRoman(times, indenter)
 		buffer.WriteString(str)
 
