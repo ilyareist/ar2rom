@@ -24,5 +24,5 @@ func main() {
 }
 
 func help() {
-	fmt.Println("Usage: Converts a single integer.\ne.g.: \"./a2r 10\"")
+	fmt.Println("Usage: Converts a single integer.\ne.g.: \"./ar2rom 10\"")
 }

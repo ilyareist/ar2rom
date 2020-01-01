@@ -10,5 +10,5 @@ run-docker:
 
 .PHONY: build-docker
 build-docker:
-	@exec docker build -t ar2rom:1.0 .
+	@exec docker build --no-cache -t ar2rom:1.0 .
 

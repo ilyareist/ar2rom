@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o a2r .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o ar2rom .
 
 FROM alpine:latest
 
